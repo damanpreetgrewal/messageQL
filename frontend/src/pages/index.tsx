@@ -7,13 +7,10 @@ const Home: NextPage = () => {
   return (
     <div>
       {data?.user ? (
-        <button onClick={() => signOut()}>Sign In</button>
+        <button onClick={() => signOut()}>Sign Out</button>
       ) : (
-        <button onClick={() => signIn('google')}>Sign Out</button>
+        <button onClick={() => signIn('google')}>Sign In</button>
       )}
-      {/* <button onClick={() => signIn('google')}>Sign In</button>
-      {data?.user?.name}
-      <button onClick={() => signOut()}>Sign Out</button> */}
     </div>
   );
 };
