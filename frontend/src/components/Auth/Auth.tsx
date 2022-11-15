@@ -23,7 +23,7 @@ const Auth: React.FunctionComponent<IAuthProps> = ({
   };
 
   return (
-    <Center height='100vh' border='1px solid red'>
+    <Center height='100vh'>
       <Stack spacing={8} align='center'>
         {session ? (
           <>
