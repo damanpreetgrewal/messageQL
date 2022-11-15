@@ -6,7 +6,7 @@ import {
 import express from 'express';
 import http from 'http';
 
-async function startApolloServer(typeDefs, resolvers) {
+async function main(typeDefs, resolvers) {
   const app = express();
   const httpServer = http.createServer(app);
   const server = new ApolloServer({
@@ -26,3 +26,8 @@ async function startApolloServer(typeDefs, resolvers) {
   );
   console.log(`🚀 Server ready at http://localhost:4000${server.graphqlPath}`);
 }
+
+main().catch(err => {
+  console.error(err);
+  process.exit(1);
+});
