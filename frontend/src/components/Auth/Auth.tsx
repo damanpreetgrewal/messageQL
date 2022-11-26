@@ -16,7 +16,7 @@ const Auth: React.FunctionComponent<IAuthProps> = ({
 
   const onSubmit = async () => {
     try {
-      //Connect to the GraphQL API and perform Mutation
+       
     } catch (error) {
       console.log('on Submit Error', error);
     }
